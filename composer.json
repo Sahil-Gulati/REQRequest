@@ -1,0 +1,19 @@
+{
+    "name": "sahil-gulati/reqrequest",
+    "description": "RabbitMQ 3.3.4 HTTP Api for PHP!",
+    "authors": [
+        {
+            "name": "Sahil Gulati",
+            "email": "sahil.nona@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+  	"php": ">=5.3"
+    },	
+    "autoload":{
+	"psr-0":{
+		"REQRequest": "src/"
+        }
+    }
+}
