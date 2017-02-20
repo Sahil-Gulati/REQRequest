@@ -20,7 +20,16 @@ use REQRequest\Rabbitmq;
 require 'vendor/autoload.php';
 
 $request= new Rabbitmq();
-print_r($request->listQueues());
+$result=$request->listQueues();
+print_r($result);
 ?>
 
 ```
+
+##List of methods and description
+
+Method Name | Alias | Description
+------------|-------|------------
+getQueues($vhost)|listQueues(...)|To get of list of queues in all vhosts or in a given vhost.
+createQueue($queueName,$durable,$autoDelete)|makeQueue(...)|To create a queue with given parameters
+deleteQueue($queueName)|removeQueue(...)|To remove queue a specified queue
