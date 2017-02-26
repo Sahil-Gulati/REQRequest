@@ -36,8 +36,16 @@ getPolicies($vhost)|listPolicies(...)| To get the list of all policies in the gi
 getParameters($component)|listParameters(...)| To get list of all parameters present for a given component
 getBindings($vhost)|listBindings(...)|To get list of all bindings
 createQueue($queueName,$durable,$autoDelete)|makeQueue(...)|To create a queue with given parameters
-deleteQueue($queueName)|removeQueue(...)|To remove queue a specified queue
+createExchange($exchangeName,$type,$durable,$autoDelete)|makeExchange(...)|To create an exchange with given parameters
+createPolicy($vhost,$name,$pattern,$definition,$priority,$applyTo)|setPolicy(...)|Creates a policy in a given virtual host.
+createUserPermissions($vhost,$username,$configRegex,...)|unsetUserPermissions(...),<br/>removeUserPermissions(...)|To create a user permission with speciifed parameters.
+deleteQueue($queueName)|removeQueue(...)|To remove a specified queue
+deleteExchange($exchangeName)|removeExchange(...)| TO remove an specified exchange
+deletePolicy($vhost,$name)|removePolicy(...)|To remove a policy with specified vhost and policy name
+deleteUser($username)|removeUser(...)|To remove a specified user
 purgeQueue($queueName)||Purge's a given queue.
 getMessage($vhost,$queueName,$redeliver,$count,$encoding)|retrieveMessage(...)| Get no. of messages specified from a given queue
+getPolicyInfo($vhost,$name)|| Get policy information according to specified parameters.
 getUserInfo($username)||Get information for a particular user
+getCompleteInfo()||Get complete information of the rabbitmq
 .....|.....|......
