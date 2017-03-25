@@ -1,7 +1,7 @@
 # REQRequest
 REQRequest is Rabbitmq Exchange Queue Request. This library is not only bound to exchanges, queues, but you can define parameters of policy of federation, shovel etc. and it is based on Rabbitmq v3.3.4 HTTP.
 
-##Installation
+## Installation
 `composer require sahil-gulati/reqrequest`
 
 <b>OR</b>
@@ -12,7 +12,7 @@ REQRequest is Rabbitmq Exchange Queue Request. This library is not only bound to
     }
 }
 ```
-##Usage
+## Usage
 ```php
 <?php
 
@@ -26,7 +26,7 @@ print_r($result);
 
 ```
 
-##List of methods, alias and description
+## List of methods, alias and description
 Method Name | Alias | Description
 ------------|-------|------------
 getQueues($vhost)|listQueues(...)|To get the list of queues in all vhosts or in a given vhost.
